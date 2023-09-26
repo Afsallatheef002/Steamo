@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Stremo</title>
+    <script>
+      let counts = setInterval(updated);
+      let upto = 0;
+      function updated() {
+          let count = document.getElementById("counter");
+          count.innerHTML = ++upto;
+          if (upto === 500) {
+              clearInterval(counts);
+          }
+      }
+  </script>
+    <script>
+      let counts1 = setInterval(updated);
+      let upto1 = 0;
+      function updated() {
+          let count = document.getElementById("counter1");
+          count.innerHTML = ++upto1;
+          if (upto1 === 20) {
+              clearInterval(counts1);
+          }
+      }
+  </script>
+   <script>
+      let counts2 = setInterval(updated);
+      let upto2 = 0;
+      function updated() {
+          let count = document.getElementById("counter2");
+          count.innerHTML = ++upto2;
+          if (upto2 === 200) {
+              clearInterval(counts2);
+          }
+      }
+  </script>
+   <script>
+      let counts3 = setInterval(updated);
+      let upto3 = 0;
+      function updated() {
+          let count = document.getElementById("counter3");
+          count.innerHTML = ++upto3;
+          if (upto3 === 100) {
+              clearInterval(counts3);
+          }
+      }
+  </script>
+  <script>
+      let previousButton = null;
+  
+      function changeStyle(button) {
+          if (previousButton) {
+              previousButton.classList.remove("clicked");
+          }
+          
+          button.classList.add("clicked");
+          previousButton = button;
+      }
+  </script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid bg1 ">
+        <nav class="navbar ">
+            <div class="container-fluid">
+              <a class="navbar-brand"><img src="img/logo.webp" alt="" ></a>
+              <form class="d-flex" role="search">
+               <a href="login.html" class="btn btn-danger">Sign In</a>
+              </form>
+             
+          </nav>
+          <section>
+            <div class="container-fluid bg2"> 
+              <div class="row text-center py-5">
+                <div>
+                  <br><br>
+                </div>
+                <div class="col-sm-12 ms-3">
+                  <h1 class="about-2">Endless movies, TV <br> shows,  and more.</h1>
+                  <h5 class=" ms-2 about3">Enjoy anywhere. Unsubscribe anytime.</h5>
+                  <br>
+                  <h6 class="ms-2 about4">Ready to watch? Enter your email to create or restart your membership</h6><br>
+                  </div><center>
+                  <!-- <div class="row align-items-center">
+                    <div class="col-4"></div>
+                    <div class="col-sm-4 text-center ">
+                      <div class="input-group   "   >
+                        <input type="text" class=" form-control border-0 search"  placeholder="Your email address">
+                        <a href="" class="input-group-text btn btn-danger  border-0 trendbtn "><b> Sign up</b></a>
+                    </div>
+                    </div>
+                  </div> -->
+                  <div class="row align-items-center">
+                    <div class="col-4"></div>
+                    <div class="col-sm-10 text-center">
+                      <div class="input-group">
+                      <input type="text" class="form-control-lg border-0 search rounded-start-1 " placeholder="Email Address">
+                      <a href="#" class="input-group-text btn border-0 searchbtn rounded-end-1 py-2 " style="background-color: rgb(247, 37, 37); color: #ffff;">Get Started</a>
+                    </div>
+                  </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </section>
+        </div>
+    </div>
+    <div class="container-fluid bg-sky-blue">
+      <section>
+        <div class="row  ">
+          <div class="col-sm-6 align-content-center">
+            <h2 class="event">Enjoy Watching Them on TV.</h2><br>
+            <h6 class="event2">Whether it’s Smart TV, Xbox, Apply TV, Watch <br> Your Favorite Program with Great Pleasure.
+            </h6>
+          </div>
+          <div class="col-sm-6 ">
+            <div class="m1">
+            <img src="img/3.webp" alt="" style="width: 100%;">
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid countbg text-white text-center d-flex align-items-center py-5">
+      <div class="container py-5">
+          <div class="row ">
+              <div class="col-lg-3">
+                  <div>
+                      <p class="countfont"><span id="counter"></span>+M</p>
+                      <p class="counttitle">Total Videos</p>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div>
+                      <p class="countfont"><span id="counter1"></span>th</p>
+                      <p class="counttitle">Position</p>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div>
+                      <p class="countfont"><span id="counter2"></span>+M</p>
+                      <p class="counttitle">Subscribers</p>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div>
+                      <p class="countfont"><span id="counter3"></span>+ </p>
+                      <p class="counttitle">Awards</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container-fluid tv text-white d-flex align-items-center">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-5 py-5">
+                <div class="">
+                    <img class="img-fluid" src="img/mobile.webp" alt="">
+                </div>
+            </div>
+            <div class="col-lg-7 py-3">
+                <h1 class="tvhead">Download Favorites, Watch <br> them Offline!.</h1>
+                <h4 class="tvsubtitle py-3">It’s super easy to save your favorite shows!</h4>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="container-fluid countbg text-white text-center d-flex align-items-center py-5">
+  <div class="container ">
+      <h1 class="planhead">Pricing Plan</h1>
+      <div class="row ">
+         
+          <div class="col-lg card1 me-4 mt-4">
+              
+                  
+                  <div class="bgplan1">
+                      <div class="py-5 plantxt">
+                          <h2><span class="planprice">$100</span> <span>/ <span class="fs-5">Month</span></span></h2>
+                          <h3>Basic</h3>
+                      </div>
+                  </div>
+                  
+              <div class="py-2">
+                  <ul class="listplan">
+                      <li class="nav-link">HD available </li>
+                      <li class="nav-link">Ultra HD available </li>
+                      <li class="nav-link">Watch on your laptop</li>
+                      <li class="nav-link">Watch on your TV</li>
+                      <li class="nav-link">Watch on your mobile phone</li>
+                      <li class="nav-link">Watch on your tablet</li>
+                      <li class="nav-link">Unlimited movies, TV shows</li>
+                      <li class="nav-link">Unlimited mobile games</li>
+                  </ul>
+                  <button class="mt-3 planbtn1">Choose A Plan</button>
+              </div>
+          </div>
+          <div class="col-lg card1 me-4 mt-4">
+              <div class="bgplan">
+                  <div class="py-5 plantxt">
+                      <h2><span class="planprice">$200</span> <span>/ <span class="fs-5">Month</span></span></h2>
+                      <h3>Standard</h3>
+                  </div>
+              </div>
+              <div class="py-2">
+                  <ul class="listplan">
+                      <li class="nav-link">HD available </li>
+                      <li class="nav-link">Ultra HD available </li>
+                      <li class="nav-link">Watch on your laptop</li>
+                      <li class="nav-link">Watch on your TV</li>
+                      <li class="nav-link">Watch on your mobile phone</li>
+                      <li class="nav-link">Watch on your tablet</li>
+                      <li class="nav-link">Unlimited movies, TV shows</li>
+                      <li class="nav-link">Unlimited mobile games</li>
+                  </ul>
+                  <button class="mt-3 planbtn">Choose A Plan</button>
+              </div>
+          </div>
+          <div class="col-lg card1 me-4 mt-4">
+              <div class="bgplan1">
+                  <div class="py-5 plantxt1">
+                      <h2><span class="planprice">$300</span><span>/ <span class="fs-5">Month</span></span></h2>
+                      <h3>Premium</h3>
+                  </div>
+              </div>
+              <div class="py-2">
+                  <ul class="listplan">
+                      <li class="nav-link">HD available </li>
+                      <li class="nav-link">Ultra HD available </li>
+                      <li class="nav-link">Watch on your laptop</li>
+                      <li class="nav-link">Watch on your TV</li>
+                      <li class="nav-link">Watch on your mobile phone</li>
+                      <li class="nav-link">Watch on your tablet</li>
+                      <li class="nav-link">Unlimited movies, TV shows</li>
+                      <li class="nav-link">Unlimited mobile games</li>
+                  </ul>
+                  <button class="mt-3 planbtn1">Choose A Plan</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid tv text-white d-flex align-items-center">
+  <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-7 py-3">
+              <h1 class="tvhead">Watch Anywhere You Want.</h1>
+              <h4 class="tvsubtitle py-3">Watch an endless number of shows, on your <br> phone, tablet, laptop, and TV.</h4>
+          </div>
+          <div class="col-lg-5">
+              <div class="">
+                  <img class="img-fluid im1" src="img/devices.webp" alt="">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid countbg text-white text-center d-flex align-items-center py-5">
+  <div class="container ">
+      <h1 class="planhead">Popular Movies And Shows</h1>
+      <div class="row ">
+          <div class="col-lg-3 py-4">
+              <a href="movie.html" class="text-decoration-none">
+              <div class="movieimg1">
+                  <img class="img-fluid movieimg" src="img/movie1.webp" alt="" style="transition: ease-in-out; transition-duration: 0.3s;">
+              </div>
+              </a>
+          </div>
+          <div class="col-lg-3 py-4">
+              <a href="movie.html" class="text-decoration-none">
+              <div class="movieimg1">
+                  <img class="img-fluid movieimg" src="img/movie2.webp" alt="" style="transition: ease-in-out; transition-duration: 0.3s;">
+              </div>
+              </a>
+          </div>
+          <div class="col-lg-3 py-4">
+              <a href="movie.html" class="text-decoration-none">
+              <div class="movieimg1">
+                  <img class="img-fluid movieimg" src="img/movie3.webp" alt="" style="transition: ease-in-out; transition-duration: 0.3s;">
+              </div>
+              </a>
+          </div>
+          <div class="col-lg-3 py-4">
+              <a href="movie.html" class="text-decoration-none">
+              <div class="movieimg1">
+                  <img class="img-fluid movieimg" src="img/movie4.webp" alt="" style="transition: ease-in-out; transition-duration: 0.3s;">
+              </div>
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+<section>
+  <div class="container-fluid questionbg text-white d-flex align-items-center">
+  <div class="container py-3">
+      <h1 class="planhead text-center py-3">Frequently Asked Questions</h1>
+      <div class="row">
+          <div class="col-lg"></div>
+          <div class="col-lg-9">
+              <div class="bg-dark" id="accordionExample">
+                  <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                      <button class=" question py-3 border-0 my-button" type="button" id="q1" onclick="changeStyle(this)" onformchange="" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="row">
+                          <div class="col-8 text-white text-start">What is Streamo?</div>
+                          <div class="col-2"></div>
+                          <div class="col-2 text-white">+</div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse "  data-bs-parent="#accordionExample">
+                      <div class="accordion-body bg-black text-white ">
+                          <p class="p-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                      <button class=" question py-3 border-0 my-button" type="button" id="q2" onclick="changeStyle(this)"  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <div class="row">
+                              <div class="col-8 text-white text-start">What's on Streamo?
+                                  </div>
+                              <div class="col-2"></div>
+                              <div class="col-2 text-white">+</div>
+                            </div>
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body bg-black text-white">
+                          <p class="p-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors. 
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                      <button class=" question py-3 border-0 my-button" type="button" id="q3" onclick="changeStyle(this)" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <div class="row">
+                              <div class="col-8 text-white text-start">Is Netflix good?</div>
+                              <div class="col-2"></div>
+                              <div class="col-2 text-white">+</div>
+                            </div>
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body bg-black text-white">
+                          <p class="p-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.  
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class=" question py-3 border-0 my-button" type="button" id="q4" onclick="changeStyle(this)" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="row">
+                                <div class="col-8 text-white text-start">Any new releases?</div>
+                                <div class="col-2"></div>
+                                <div class="col-2 text-white">+</div>
+                              </div>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-black text-white">
+                          <p class="p-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.  
+                          </div>
+                      </div>
+                    </div>
+                  <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class=" question py-3 border-0 my-button" type="button" id="q5" onclick="changeStyle(this)" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="row">
+                                <div class="col-8 text-white text-start">Best Netflix shows?</div>
+                                <div class="col-2"></div>
+                                <div class="col-2 text-white">+</div>
+                              </div>
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-black text-white">
+                          <p class="p-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.  
+                      </div>
+                      </div>
+                    </div>
+                  <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class=" question py-3 border-0 my-button" type="button" id="q6" onclick="changeStyle(this)" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="row">
+                                <div class="col-8 text-white text-start">Good for Kids?</div>
+                                <div class="col-2"></div>
+                                <div class="col-2 text-white">+</div>
+                              </div>
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-black text-white">
+                          <p class="p-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites.  
+                          </div>
+                      </div>
+                    </div>
+                </div>
+          </div>
+          <div class="col-lg"></div>
+      </div>
+  </div>
+</div>
+</section>
+<section>
+  <div class="container-fluid  countbg text-white  d-flex align-items-center ">
+      <div class="container-fluid">
+          <div class="row py-3">
+              <div class="col-lg-3 ms-2">
+                  <img src="/img/logo.webp" alt="">
+                  <p class="mt-3">Eiusmod tempor incididunt ut la abore et minim ven exerc itation ulla mco lboris naliquip comm.</p>
+                  <a class="iconimg"  href="#!" role="button"><i class="fab fa-facebook" ></i></a> 
+                  <a class="ticon" role="button"><i class="fab fa-twitter"></i></a> 
+                  <a class="licon" role="button"><i class="fab fa-linkedin-in"></i></a> 
+                  <a class="instaicon"role="button"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="col-lg py-3">
+                  <div class="row px-4">
+                      <div class="col-6">
+                          <div class="row">
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Home</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">About Us</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Series</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Contact</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <div class="row">
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Tv Series</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Tech</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Movie</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Video</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row px-4  mt-2">
+                      <div class="col-8">
+                          <div class="row">
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Live</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col-lg-3">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Tv Series</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col-lg-4">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink" aria-current="page" href="#">Horror Movies</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-lg-6">
+                          <div class="row">
+                              <div class="col ms-1 footimgb ">
+                                  <img src="img/f1.webp" class="imgfoot img-fluid" alt="">
+                              </div>
+                              <div class="col ms-1 footimgb">
+                                  <img src="img/f2.webp" class="imgfoot img-fluid"  alt="">
+                              </div>
+                              <div class="col ms-1 footimgb">
+                                  <img src="img/f5.webp" class="imgfoot img-fluid"  alt="">
+                              </div>
+                              
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="row">
+                              <div class="col ms-1 footimgb">
+                                  <img src="img/f3.webp" class="imgfoot img-fluid"  alt="">
+                              </div>
+                              <div class="col ms-1 footimgb">
+                                  <img src="img/f4.webp" class="imgfoot img-fluid"  alt="">
+                              </div>
+                              <div class="col ms-1 footimgb">
+                                  <img src="img/f6.webp" class="imgfoot img-fluid"  alt="">
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row px-4">
+                      <div class="col">
+                          <div class="row">
+                              <div class="col">
+                                  <ul class="navbar-nav ">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink1" aria-current="page" href="#">Report A Bug</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink1" aria-current="page" href="#">Request Feature</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink1" aria-current="page" href="#">Movie Request</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink1" aria-current="page" href="#">Privacy Policy</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                              <div class="col">
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="text-decoration-none footlink1" aria-current="page" href="#">Suppport</a>
+                                      </li>
+                                  </ul> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <hr> 
+          </div>
+          <div class="row ">
+              <div class="col-lg-7">
+                  <p>Copyright ©2023 All rights reserved</p>
+              </div>
+              <div class="col">
+                  <p>Already have an Account? <a href="" class="footlink1">LOGIN</a> <button class=" footsignin rounded">Become A Member</button></p>
+              </div>
+          </div>
+          </div>
+      </div>
+  </div>           
+</section>
+
+
+
+</body>
+</html>
